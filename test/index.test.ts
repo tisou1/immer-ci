@@ -2,7 +2,7 @@ import { describe, it , expect } from 'vitest'
 import { produce } from 'immer'
 
 
-type Item = {
+export type Item = {
   title?: string,
   done?: boolean,
   id?: string

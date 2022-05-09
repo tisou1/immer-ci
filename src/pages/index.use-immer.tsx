@@ -15,7 +15,7 @@ type Item = {
 function Index() {
   const { isDark, toggleDark } = useDark()
 
-  const [todos, setTodos] = useState([
+  const [todos, setTodos] = useImmer([
     {
       id: "React",
       title: "Learn React",
@@ -32,40 +32,22 @@ function Index() {
   const unfinishedTodoCount = todos.filter((todo) => todo.done === false).length;
 
   const handleToggle = useCallback((id: string) => {
-    setTodos(
-      produce((draft: Item[]) => {
+    setTodos((draft: Item[]) => {
         const todo = draft.find(todo => todo.id === id)
         if (todo)
           todo.done = !todo.done
-      })
+      }
     )
   }, [])
 
   const handleAdd = useCallback(() => {
-    //使用原生的写法,会取不到最新的state
-    // setTodos([...todos,{
-    //   id: "todo_" + Math.random(),
-    //   title: "A new todo",
-    //   done: false
-    // }])
-
-    //使用函数式更新
-    // setTodos(todos => [...todos,{
-    //   id: "todo_" + Math.random(),
-    //   title: "A new todo",
-    //   done: false
-    // }])
-
-
-    //进阶版本的immer科里化版本
-    setTodos(
-      produce(draft => {
+    setTodos(draft => {
         draft.push({
           id: "todo_" + Math.random(),
           title: "A new todo",
           done: false
         })
-      })
+      }
     )
 
   }, [])

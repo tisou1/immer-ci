@@ -16,6 +16,10 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "types": [
+      "react",
+      "vite-plugin-pages/client",
+    ],
     "paths":{
       "~/*": ["src/*"]
     }

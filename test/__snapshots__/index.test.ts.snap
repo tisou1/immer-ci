@@ -1,0 +1,16 @@
+// Vitest Snapshot v1
+
+exports[`immer > curried 1`] = `
+[
+  {
+    "done": true,
+    "id": "JavaScript",
+    "title": "Learn TypeScript",
+  },
+  {
+    "done": true,
+    "id": "Immer",
+    "title": "Try Immer",
+  },
+]
+`;

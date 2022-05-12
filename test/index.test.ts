@@ -60,4 +60,28 @@ describe('immer', () => {
     expect(nextState).toMatchSnapshot()
   
   })
+
+
+  it.only('nooperator',() => {
+    const baseState:Item[] = [
+      {
+          id: "JavaScript",
+          title: "Learn TypeScript",
+          done: true
+      },
+      {
+          id: "Immer",
+          title: "Try Immer",
+          done: false
+      }
+    ]
+    //不对draft做任何操作的话,返回原来的对象
+    // const newState = produce(baseState, draft => {})
+
+    const handle = produce((draft) => {}) //返回函数
+
+    const newState = handle(baseState)
+
+    expect(baseState).toEqual(newState)
+  })
 })

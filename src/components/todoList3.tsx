@@ -1,13 +1,32 @@
 import produce from 'immer'
-import React, { memo, useCallback, useState } from 'react'
+import React, { memo, useCallback, useReducer, useState } from 'react'
 import { useImmer } from 'use-immer'
-import type { Item, TodoProps} from './types'
+import type { Item, TodoProps, Action} from './types'
+
 
 
 
 function Index() {
 
-  const [todos, setTodos] = useState([
+ const [todos, dispatch] = useReducer(
+   produce((draft: Item[],action: Action) => {
+      switch (action.type) {
+        case 'toggle':
+          const todo = draft.find(todo => todo.id === action.id)!
+          todo.done = !todo.done
+          break
+        case 'add':
+          draft.push({
+            id:action.id,
+            title: 'a New todo',
+            done: false
+          })
+          break
+        default:
+          break
+      }
+   }),
+  [
     {
       id: "React",
       title: "Learn React",
@@ -18,7 +37,8 @@ function Index() {
       title: "Try immer",
       done: false
     }
-  ])
+  ]
+ )
 
 
   const unfinishedTodoCount = todos.filter((todo) => todo.done === false).length;

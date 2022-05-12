@@ -1,5 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
 import { produce, enableMapSet, original, current } from 'immer'
+import axios from 'axios'
 
 enableMapSet() //支持map,set
 
@@ -8,7 +9,10 @@ export type Item = {
   done?: boolean,
   id?: string
 }
-vi.useFakeTimers()
+
+function buyApples() {
+  return axios('https://www.fastmock.site/mock/6f92f55a6b8b6a1bdf0a2f35dcbe01ec/data1/1')
+}
 
 
 describe('immer', () => {
@@ -141,11 +145,31 @@ describe('immer', () => {
   })
 
 
-  it('async func',  () => { 
+  it('async func',  async () => { 
     vi.useFakeTimers()  //开启模拟计时器
     setTimeout(() => {
       console.log('ssssssssssssssssss')
     },1000)
     vi.runAllTimers()  //加速, 让所有的定时器都执行完毕
+  })
+
+
+  it.only('fetch', async () => {
+      // toEqual returns a promise now, so you HAVE to await it
+      const res = await buyApples()
+      expect(res.data).toMatchInlineSnapshot(`
+        {
+          "list": [
+            "React",
+            "ES6",
+            "javaScript",
+            "vue",
+            "python",
+          ],
+        }
+      `)
+
+      // await expect(buyApples()).resolves.toMatchSnapshot() // jest API
+      // await expect(buyApples()).resolves.to.equal({ id: 1 }) // chai API
   })
 })

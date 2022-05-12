@@ -34,7 +34,7 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest]
         version: [14.x, 16.x]
-        fail-fast: false #失败处理
+      fail-fast: false #失败处理
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/setup-node@v3

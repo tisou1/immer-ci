@@ -36,7 +36,7 @@ describe('immer', () => {
   })
 
 
-  it.only('curried', () => {
+  it('curried', () => {
     const baseState:Item[] = [
       {
           id: "JavaScript",

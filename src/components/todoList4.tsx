@@ -1,6 +1,6 @@
 import produce from 'immer'
 import React, { memo, useCallback, useReducer, useState } from 'react'
-import { useImmer } from 'use-immer'
+import { useImmerReducer } from 'use-immer'
 import type { Item, TodoProps, Action } from './types'
 
 
@@ -8,8 +8,8 @@ import type { Item, TodoProps, Action } from './types'
 
 function Index() {
 
-  const [todos, dispatch] = useReducer(
-    produce((draft: Item[], action: Action) => {
+  const [todos, dispatch] = useImmerReducer(
+    (draft: Item[], action: Action) => {
       switch (action.type) {
         case 'toggle':
           const todo = draft.find(todo => todo.id === action.id)!
@@ -25,7 +25,7 @@ function Index() {
         default:
           break
       }
-    }),
+    },
     [
       {
         id: "React",

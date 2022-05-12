@@ -25,7 +25,7 @@ jobs:
   #   steps:
   #     - uses: actions/checkout@v3
 
-  test: #测试
+  vitest: #测试
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3

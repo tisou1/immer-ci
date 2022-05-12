@@ -3,11 +3,10 @@ import TodoList from '~/components/todoList4'
 
 function Index() {
   const { isDark, toggleDark } = useDark()
-
   return (
     <div className='text-center'>
 
-      <TodoList/>
+      <TodoList />
 
       <div className='text-center py-6 flex justify-center'>
         <div onClick={toggleDark}>

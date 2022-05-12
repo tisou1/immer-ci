@@ -23,5 +23,6 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     include: ['test/**/*.test.{ts,js}'],
+    allowOnly: true, //允许标记为only的测试套件和测试用例
   }
 })

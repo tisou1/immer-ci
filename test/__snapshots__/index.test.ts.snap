@@ -1,5 +1,34 @@
 // Vitest Snapshot v1
 
+exports[`immer > base 1`] = `
+[
+  {
+    "done": true,
+    "title": "Learn TypeScript",
+  },
+  {
+    "done": true,
+    "title": "Try Immer",
+  },
+  {
+    "title": "Tweet about it1",
+  },
+]
+`;
+
+exports[`immer > base 2`] = `
+[
+  {
+    "done": true,
+    "title": "Learn TypeScript",
+  },
+  {
+    "done": false,
+    "title": "Try Immer",
+  },
+]
+`;
+
 exports[`immer > curried 1`] = `
 [
   {

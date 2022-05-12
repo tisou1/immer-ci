@@ -10,6 +10,7 @@ export type Item = {
 
 
 describe('immer', () => {
+
   it('base', () => {
     const baseState:Item[] = [
       {
@@ -47,17 +48,16 @@ describe('immer', () => {
           title: "Try Immer",
           done: false
       }
-  ]
+    ]
 
-  const toggleTodo = produce((draft: Item[], id: string) => {
-    const todo = draft.find(todo => todo.id === id)
-    todo.done = !todo.done
-  })
-  //使用科里化初始化
-  const nextState = toggleTodo(baseState, 'Immer')
+    const toggleTodo = produce((draft: Item[], id: string) => {
+      const todo = draft.find(todo => todo.id === id)
+      todo.done = !todo.done
+    })
+    //使用科里化初始化
+    const nextState = toggleTodo(baseState, 'Immer')
 
-
-  expect(nextState).toMatchSnapshot()
+    expect(nextState).toMatchSnapshot()
   
   })
 })

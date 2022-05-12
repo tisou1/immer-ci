@@ -1,5 +1,17 @@
 // Vitest Snapshot v1
 
+exports[`axios setTimeout > fetch 1`] = `
+{
+  "list": [
+    "React",
+    "ES6",
+    "javaScript",
+    "vue",
+    "python",
+  ],
+}
+`;
+
 exports[`immer > base 1`] = `
 [
   {

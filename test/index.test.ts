@@ -154,7 +154,7 @@ describe('immer', () => {
   })
 
 
-  it.only('fetch', async () => {
+  it('fetch', async () => {
       // toEqual returns a promise now, so you HAVE to await it
       const res = await buyApples()
       expect(res.data).toMatchInlineSnapshot(`

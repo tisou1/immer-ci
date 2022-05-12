@@ -37,7 +37,10 @@ jobs:
       fail-fast: false #失败处理
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v3
+      - name: Set node version to ${{ matrix.node_version }}
+        - uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v2
         with:
           node-version: ${{ matrix.version }}
       

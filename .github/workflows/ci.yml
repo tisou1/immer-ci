@@ -4,8 +4,8 @@ on: #定义触发actions的事件
     branches:  #启用筛选,当main分支上触发push的时候,执行工作流
       - main
 jobs:
-  lint:  #jobs的ID 唯一
-    runs-on: ubuntu-latest  #运行的容器
+  Build:  #jobs的ID 唯一
+    runs-on: ubuntu-latest  #运行的系统
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2
@@ -17,6 +17,9 @@ jobs:
       - name: Install
         run: pnpm install
 
+      - name: test-vitest
+        run: pnpm run test
+
       # - name Lint
       #   run: pnpm run lint
 
@@ -25,19 +28,21 @@ jobs:
   #   steps:
   #     - uses: actions/checkout@v3
 
-  vitest: #测试
+  #多维矩阵
+  matrix_test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        version: [14.x, 16.x]
+        fail-fast: false #失败处理
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
-          registry-url: https://registry.npmjs.org/
-          cache: pnpm
-
-      - name: test-install
+          node-version: ${{ matrix.version }}
+      
+      - name: Install
         run: pnpm install
+
       - name: test-vitest
         run: pnpm run test

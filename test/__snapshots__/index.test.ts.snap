@@ -1,17 +1,5 @@
 // Vitest Snapshot v1
 
-exports[`axios setTimeout > fetch 1`] = `
-{
-  "list": [
-    "React",
-    "ES6",
-    "javaScript",
-    "vue",
-    "python",
-  ],
-}
-`;
-
 exports[`immer > base 1`] = `
 [
   {
@@ -54,54 +42,4 @@ exports[`immer > curried 1`] = `
     "title": "Try Immer",
   },
 ]
-`;
-
-exports[`immer > fetch 1`] = `
-{
-  "config": {
-    "adapter": [Function],
-    "data": undefined,
-    "env": {
-      "FormData": [Function],
-    },
-    "headers": {
-      "Accept": "application/json, text/plain, */*",
-    },
-    "maxBodyLength": -1,
-    "maxContentLength": -1,
-    "method": "get",
-    "timeout": 0,
-    "transformRequest": [
-      [Function],
-    ],
-    "transformResponse": [
-      [Function],
-    ],
-    "transitional": {
-      "clarifyTimeoutError": false,
-      "forcedJSONParsing": true,
-      "silentJSONParsing": true,
-    },
-    "url": "https://www.fastmock.site/mock/6f92f55a6b8b6a1bdf0a2f35dcbe01ec/data1/1",
-    "validateStatus": [Function],
-    "xsrfCookieName": "XSRF-TOKEN",
-    "xsrfHeaderName": "X-XSRF-TOKEN",
-  },
-  "data": {
-    "list": [
-      "React",
-      "ES6",
-      "javaScript",
-      "vue",
-      "python",
-    ],
-  },
-  "headers": {
-    "content-length": "52",
-    "content-type": "application/json; charset=utf-8",
-  },
-  "request": XMLHttpRequest {},
-  "status": 200,
-  "statusText": "OK",
-}
 `;

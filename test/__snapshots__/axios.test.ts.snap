@@ -1,0 +1,13 @@
+// Vitest Snapshot v1
+
+exports[`axios 1`] = `
+{
+  "list": [
+    "React",
+    "ES6",
+    "javaScript",
+    "vue",
+    "python",
+  ],
+}
+`;

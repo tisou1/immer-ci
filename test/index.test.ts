@@ -10,10 +10,6 @@ export type Item = {
   id?: string
 }
 
-function buyApples() {
-  return fetch('https://www.fastmock.site/mock/6f92f55a6b8b6a1bdf0a2f35dcbe01ec/data1/1').then(r => r.json())
-}
-
 
 
 describe('immer', () => {
@@ -93,7 +89,7 @@ describe('immer', () => {
   })
 
 
-  it('map and set', () => {
+  it.skip('map and set', () => {
     const usersById = new Map()
 
     const usersById2 = produce(usersById, draft => {
@@ -148,7 +144,7 @@ describe('immer', () => {
 })
 
 
-describe.skip('axios setTimeout', () => {
+describe.skip('setTimeout', () => {
   it('async func',  async () => { 
     vi.useFakeTimers()  //开启模拟计时器
     setTimeout(() => {
@@ -158,11 +154,5 @@ describe.skip('axios setTimeout', () => {
   })
 
 
-  it('fetch', async () => {
-      // toEqual returns a promise now, so you HAVE to await it
-      const res = await buyApples()
-      expect(res.data).toMatchSnapshot()
-      // await expect(buyApples()).resolves.toMatchSnapshot() // jest API
-      // await expect(buyApples()).resolves.to.equal({ id: 1 }) // chai API
-  })
 })
+

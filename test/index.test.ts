@@ -1,4 +1,4 @@
-import { describe, it, expect, vi } from 'vitest'
+import { describe, it, expect, vi , beforeEach, afterEach} from 'vitest'
 import { produce, enableMapSet, original, current } from 'immer'
 import axios from 'axios'
 
@@ -145,8 +145,14 @@ describe('immer', () => {
 
 
 describe.skip('setTimeout', () => {
-  it('async func',  async () => { 
+  beforeEach(() => {
     vi.useFakeTimers()  //开启模拟计时器
+  })
+  afterEach(( ) => {
+    vi.restoreAllMocks()
+  })
+  it('async func',  async () => { 
+
     setTimeout(() => {
       console.log('ssssssssssssssssss')
     },1000)

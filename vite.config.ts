@@ -21,6 +21,7 @@ export default defineConfig({
     Pages(),
   ],
   test: {
+    globals: true,  //不需要手动引入一些函数. 比如vi
     environment: 'jsdom',
     include: ['test/**/*.test.{ts,js}'],
     allowOnly: true, //允许标记为only的测试套件和测试用例

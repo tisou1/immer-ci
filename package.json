@@ -15,7 +15,7 @@
   "license": "ISC",
   "packageManager": "pnpm@7.12.2",
   "dependencies": {
-    "axios": "^0.27.2",
+    "axios": "^1.0.0",
     "immer": "^9.0.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -7,7 +7,7 @@ specifiers:
   '@types/react-dom': 18.0.6
   '@vitejs/plugin-react': 2.1.0
   axios: ^1.0.0
-  happy-dom: 6.0.4
+  happy-dom: 7.0.0
   immer: ^9.0.15
   jsdom: 20.0.1
   pnpm: 7.13.1
@@ -35,14 +35,14 @@ devDependencies:
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
   '@vitejs/plugin-react': 2.1.0_vite@3.1.4
-  happy-dom: 6.0.4
+  happy-dom: 7.0.0
   jsdom: 20.0.1
   pnpm: 7.13.1
   typescript: 4.8.4
   unocss: 0.45.21_vite@3.1.4
   vite: 3.1.4
   vite-plugin-pages: 0.26.0_vite@3.1.4
-  vitest: 0.23.4_vez6z75jtzlm7i55ew7qbfc74a
+  vitest: 0.23.4_qprcqi7a2k7gnpvzi5bloh3aju
 
 packages:
 
@@ -1501,8 +1501,8 @@ packages:
       duplexer: 0.1.2
     dev: true
 
-  /happy-dom/6.0.4:
-    resolution: {integrity: sha512-b+ID23Ms0BY08UNLymsOMG7EI2jSlwEt4cbJs938GZfeNAg+fqgkSO3TokQMgSOFoHznpjWmpVjBUL5boJ9PWw==}
+  /happy-dom/7.0.0:
+    resolution: {integrity: sha512-nLhVhWIf4M4SIm2hBqAb1rshuAyzJwgD0iJtWeXa07poPdhiR99o0A+JxCOquJWWSFkCREynMNbbvA6sGEz/cQ==}
     dependencies:
       css.escape: 1.5.1
       he: 1.2.0
@@ -2640,7 +2640,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.23.4_vez6z75jtzlm7i55ew7qbfc74a:
+  /vitest/0.23.4_qprcqi7a2k7gnpvzi5bloh3aju:
     resolution: {integrity: sha512-iukBNWqQAv8EKDBUNntspLp9SfpaVFbmzmM0sNcnTxASQZMzRw3PsM6DMlsHiI+I6GeO5/sYDg3ecpC+SNFLrQ==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
@@ -2667,7 +2667,7 @@ packages:
       '@types/node': 18.7.14
       chai: 4.3.6
       debug: 4.3.4
-      happy-dom: 6.0.4
+      happy-dom: 7.0.0
       jsdom: 20.0.1
       local-pkg: 0.4.2
       strip-literal: 0.4.2

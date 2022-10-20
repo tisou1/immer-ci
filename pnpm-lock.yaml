@@ -10,7 +10,7 @@ specifiers:
   happy-dom: 7.6.0
   immer: ^9.0.15
   jsdom: 20.0.1
-  pnpm: 7.13.5
+  pnpm: 7.13.6
   react: ^18.2.0
   react-dom: ^18.2.0
   react-router-dom: ^6.3.0
@@ -37,12 +37,12 @@ devDependencies:
   '@vitejs/plugin-react': 2.1.0_vite@3.1.8
   happy-dom: 7.6.0
   jsdom: 20.0.1
-  pnpm: 7.13.5
+  pnpm: 7.13.6
   typescript: 4.8.4
   unocss: 0.45.30_vite@3.1.8
   vite: 3.1.8
   vite-plugin-pages: 0.27.0_vite@3.1.8
-  vitest: 0.24.3_5uaofb3njkwtbg7gj4t6k5uwpy
+  vitest: 0.24.3_vvncpcozt5tjjsopqbxfbxpoyy
 
 packages:
 
@@ -2147,8 +2147,8 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /pnpm/7.13.5:
-    resolution: {integrity: sha512-7+xyYPunBiAAJclpmUU2CTqe7uHipDjguUF2qmd9+r8hfZEVj0TnMTfblPnRF9aiVsmE4X3zRPlY3A5zk7r73w==}
+  /pnpm/7.13.6:
+    resolution: {integrity: sha512-KIGf//0cojjX3cUL63gvAk8d5t9tg+5h6AxLGyxQwoCPtpsjXafm/auIJyDUUh9RVmcPusJxdiONkgxPnbW1YA==}
     engines: {node: '>=14.6'}
     hasBin: true
     dev: true

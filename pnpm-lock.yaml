@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@iconify-json/carbon': 1.1.8
+  '@iconify-json/carbon': 1.1.9
   '@types/node': 18.7.14
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
@@ -30,7 +30,7 @@ dependencies:
   use-immer: 0.7.0_immer@9.0.15+react@18.2.0
 
 devDependencies:
-  '@iconify-json/carbon': 1.1.8
+  '@iconify-json/carbon': 1.1.9
   '@types/node': 18.7.14
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
@@ -349,14 +349,10 @@ packages:
     dev: true
     optional: true
 
-  /@iconify-json/carbon/1.1.8:
-    resolution: {integrity: sha512-aSoMgvZyvIXadLbMXcfS+qy8CVxSExvvp8Vd/nCrupLFc0KLKSukRInnVNc63zaHqoe1NBf5xUrgfyRYYfaKWQ==}
+  /@iconify-json/carbon/1.1.9:
+    resolution: {integrity: sha512-O3geRhhnE9dDDC4oT6qwBs7sdc37R9UqftiG7BP8YVDw8OcXv8i95J0ZEkIfdOXFj1Wb6kC/Uu/6VTlAqotVXg==}
     dependencies:
-      '@iconify/types': 1.1.0
-    dev: true
-
-  /@iconify/types/1.1.0:
-    resolution: {integrity: sha512-Jh0llaK2LRXQoYsorIH8maClebsnzTcve+7U3rQUSnC11X4jtPnFuyatqFLvMxZ8MLG8dB4zfHsbPfuvxluONw==}
+      '@iconify/types': 2.0.0
     dev: true
 
   /@iconify/types/2.0.0:

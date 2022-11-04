@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@iconify-json/carbon': 1.1.9
   '@types/node': 18.11.7
-  '@types/react': 18.0.23
+  '@types/react': 18.0.25
   '@types/react-dom': 18.0.7
   '@vitejs/plugin-react': 2.2.0
   axios: ^1.0.0
@@ -32,7 +32,7 @@ dependencies:
 devDependencies:
   '@iconify-json/carbon': 1.1.9
   '@types/node': 18.11.7
-  '@types/react': 18.0.23
+  '@types/react': 18.0.25
   '@types/react-dom': 18.0.7
   '@vitejs/plugin-react': 2.2.0_vite@3.1.8
   happy-dom: 7.6.6
@@ -42,7 +42,7 @@ devDependencies:
   unocss: 0.46.0_vite@3.1.8
   vite: 3.1.8
   vite-plugin-pages: 0.27.1_vite@3.1.8
-  vitest: 0.24.3_ye6oshpj4ty7tenphfu353iv6i
+  vitest: 0.24.5_ye6oshpj4ty7tenphfu353iv6i
 
 packages:
 
@@ -518,11 +518,11 @@ packages:
   /@types/react-dom/18.0.7:
     resolution: {integrity: sha512-HaXc+BbqAZE1RdsK3tC8SbkFy6UL2xF76lT9rQs5JkPrJg3rWA3Ou/Lhw3YJQzEDkBpmJ79nBsfnd05WrBd2QQ==}
     dependencies:
-      '@types/react': 18.0.23
+      '@types/react': 18.0.25
     dev: true
 
-  /@types/react/18.0.23:
-    resolution: {integrity: sha512-R1wTULtCiJkudAN2DJGoYYySbGtOdzZyUWAACYinKdiQC8auxso4kLDUhQ7AJ2kh3F6A6z4v69U6tNY39hihVQ==}
+  /@types/react/18.0.25:
+    resolution: {integrity: sha512-xD6c0KDT4m7n9uD4ZHi02lzskaiqcBxf4zi+tXZY98a04wvc0hi/TcCPC2FOESZi51Nd7tlUeOJY8RofL799/g==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
@@ -2470,8 +2470,8 @@ packages:
       qs: 6.10.3
     dev: true
 
-  /tinybench/2.3.0:
-    resolution: {integrity: sha512-zs1gMVBwyyG2QbVchYIbnabRhMOCGvrwZz/q+SV+LIMa9q5YDQZi2kkI6ZRqV2Bz7ba1uvrc7ieUoE4KWnGeKg==}
+  /tinybench/2.3.1:
+    resolution: {integrity: sha512-hGYWYBMPr7p4g5IarQE7XhlyWveh1EKhy4wUBS1LrHXCKYgvz+4/jCqgmJqZxxldesn05vccrtME2RLLZNW7iA==}
     dev: true
 
   /tinypool/0.3.0:
@@ -2691,8 +2691,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.24.3_ye6oshpj4ty7tenphfu353iv6i:
-    resolution: {integrity: sha512-aM0auuPPgMSstWvr851hB74g/LKaKBzSxcG3da7ejfZbx08Y21JpZmbmDYrMTCGhVZKqTGwzcnLMwyfz2WzkhQ==}
+  /vitest/0.24.5_ye6oshpj4ty7tenphfu353iv6i:
+    resolution: {integrity: sha512-zw6JhPUHtLILQDe5Q39b/SzoITkG+R7hcFjuthp4xsi6zpmfQPOZcHodZ+3bqoWl4EdGK/p1fuMiEwdxgbGLOA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -2722,7 +2722,7 @@ packages:
       jsdom: 20.0.1
       local-pkg: 0.4.2
       strip-literal: 0.4.2
-      tinybench: 2.3.0
+      tinybench: 2.3.1
       tinypool: 0.3.0
       tinyspy: 1.0.2
       vite: 3.1.8

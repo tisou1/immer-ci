@@ -5,7 +5,7 @@ specifiers:
   '@types/node': 18.11.7
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.7
-  '@vitejs/plugin-react': 4.0.0
+  '@vitejs/plugin-react': 4.0.1
   axios: ^1.0.0
   happy-dom: 7.6.6
   immer: ^9.0.15
@@ -34,7 +34,7 @@ devDependencies:
   '@types/node': 18.11.7
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.7
-  '@vitejs/plugin-react': 4.0.0_vite@3.2.7
+  '@vitejs/plugin-react': 4.0.1_vite@3.2.7
   happy-dom: 7.6.6
   jsdom: 20.0.3
   pnpm: 7.14.0
@@ -670,8 +670,8 @@ packages:
       - rollup
     dev: true
 
-  /@vitejs/plugin-react/4.0.0_vite@3.2.7:
-    resolution: {integrity: sha512-HX0XzMjL3hhOYm+0s95pb0Z7F8O81G7joUHgfDd/9J/ZZf5k4xX6QAMFkKsHFxaHlf6X7GD7+XuaZ66ULiJuhQ==}
+  /@vitejs/plugin-react/4.0.1_vite@3.2.7:
+    resolution: {integrity: sha512-g25lL98essfeSj43HJ0o4DMp0325XK0ITkxpgChzJU/CyemgyChtlxfnRbjfwxDGCTRxTiXtQAsdebQXKMRSOA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.2.0
@@ -1085,6 +1085,11 @@ packages:
 
   /destr/2.0.0:
     resolution: {integrity: sha512-FJ9RDpf3GicEBvzI3jxc2XhHzbqD8p4ANw/1kPsFBfTvP1b7Gn/Lg1vO7R9J4IVgoMbyUmFrFGZafJ1hPZpvlg==}
+    dev: true
+
+  /diff-sequences/29.4.3:
+    resolution: {integrity: sha512-ofrBgwpPhCD85kMKtE9RYFFq6OC1A89oW2vvgWZNCwxrUpRUILopY7lsYyMDSjc8g6U6aiO0Qubg6r4Wgt5ZnA==}
+    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dev: true
 
   /diff-sequences/29.4.3:
